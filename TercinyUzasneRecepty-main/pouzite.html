@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang='cs'>
   <head>
-    <title>Použité stránky/recepty</title>
-<link rel="icon" type="image/x-icon" href="kuch.png"> 
+    <title>Kucharka_domaci stranka</title>
+ <link rel="icon" type="image/x-icon" href="kuch.png">
 
  
     <style>
-body{
+
+
+    body{
 margin: 0px 650px 0px 650px;
 text-align: center;
-/*background-color: #F5E7D3;*/
 color: black;
+
 }
 h2 {
-
-
-font-size:  50px;
+font-size:  55px;
 text-align: center;
+margin-top: 1200px;
 } 
 
-
-h1 {
-
-
-font-size:  20px;
-text-align: center;
-} 
+p{
 
 
-
-
+  font-size: 35px;
+}
 
 
 html {
@@ -37,36 +32,31 @@ background-image: url(ee.jpg);
 background-repeat: no-repeat;
 background-size: 100%;
 background-attachment: fixed;
-font-family: 'Grape Nuts', cursive;
+font-family: 'Comforter', cursive;
 color: white;
-
-
-
-
 }
 
 
-
-
-
-ul {
-  
- text-decoration: none;
-font-size: 40px ;
-cursor: pointer;
-color: black;
-
-  
-}
 
 a{
 color: white;
-
+font-size: 20px;
 }
 
 li{
-color: black;
-font-size: 40px;
+
+  color: black;
+  font-size: 60px;
+   text-decoration: none;
+   list-style: none;
+}
+
+
+li a{
+  color: black;
+  font-size: 45px;
+   text-decoration: none;
+   list-style: none;
 }
 
 a:link, a:visited    {text-decoration: none}
@@ -78,30 +68,6 @@ display: inline-block;
 
 }
 
-
-.dropdown-content {
-display: none;
-position: absolute;
-min-width: 260px;
-padding: 5px;
-background-color: black;
-color: white;
-font-size: 15px;
-text-align: center;
-margin-left:  30px;
-border: 2px solid white;
-
-}
-
-.dropdown:hover .dropdown-content {
-display: block;
-}
-
-span {
-
-font-size: 15px;
-
-}
 .menu {
 color: white;
 }
@@ -111,23 +77,18 @@ padding-top: 50px;
 s {
 font-family: 'Grape Nuts', cursive;
 }
-h3{
-font-size: 35px;
-}
-ul li ul li{
-  list-style: none;
-}
 div div a{
 
 font-size:	40px;
-padding-left: 40px;
-padding-right: 40px;
+ padding-left: 50px;
+ padding-right: 50px; 
   padding-top:0px;
 
 }
 div{
   text-align: center;
   background-color: black;
+  font-family:25px;
   padding:0px;
 
 }
@@ -140,48 +101,47 @@ div{
 <body>
 
 
-  <div id="pagetop" class="notranslate" >
+    <div id="pagetop" class="notranslate" >
     
     
     
-    <s>   <div class="dropdown">
-      <a class="button" href="index.html" 		title='Domácí stránka '>Domácí stránka </a>
-       </div>
-                    
-                    
-                    
-      <div class="dropdown">
-       <a class="button" href="recepty.html" title='Recepty' >Recepty</a> 
+ <s>   <div class="dropdown">
+   <a class="button" href="index.html" 		title='Domácí stránka '>Domácí stránka </a>
+  	</div>
+                 
+                 
+                 
+   <div class="dropdown">
+    <a class="button" href="recepty.html" title='Recepty' >Recepty</a> 
+
+     </div>
    
-        </div>
-      
-      
-      <div class="dropdown">
-       <a class="button" href="pouzite.html" title='Použité stánky/recepty' >Použité stánky/recepty</a> 
+   
+   <div class="dropdown">
+    <a class="button" href="pouzite.html" title='Použité stánky/recepty' >Použité stánky/recepty</a> 
+ 
+
+     </div>
+   
     
-   
-        </div>
+
+         
+      </div> </s>
       
-       
-   
-            
-         </div> </s>
-      
-  
-      <h2>
-       
-      </h2>
+    
+
       
 
-  <strong>
- <ul  style="margin-top: 450px">
-     <li  style="color: black;font-size: 60px; text-decoration: none;list-style: none;">Na jakou stánku odkazy chceš? </li>
+  
+ <ul>
+   <strong>
+     <li style="margin-top: 450px;">Na jakou stánku odkazy chceš? </li> </strong>
         <ul  style="display: block;">
-          <li ><a  href="odsladke.html" style="color: black;font-size: 40px; text-decoration: none;">Sladké dobroty</a></li>
-          <li><a href="odslane.html" style="color: black;font-size: 40px; text-decoration: none;">Slané dobroty</a></li>
+          <li ><a  href="odsladke.html" >Sladké dobroty</a></li>
+          <li><a href="odslane.html" >Slané dobroty</a></li>
         </ul>
 </ul>
-      </strong>
+     
       
       
       
@@ -194,14 +154,14 @@ div{
       
       
       
-      <h2 style="margin-top: 1200px;">
+      <h2 id="pomoc">
        Pomocník při tvorbě tohto webu
       </h2>
       
-      
-      
-      
-      
+      <p>Pomocníkem při tvorbě tohoto webu byla hlavně stránka <strong><a  style="color:black;font-size: 35px"href="https://www.w3schools.com/default.asp">W3Schools</a></strong></p>
+      <strong><p>Dále mi př tvorbě tohoto webu pomáhali dva mí blízcí lidé</p>
+     <p>Nela Březinová & Adam Gregořica</p>
+      <p style="margin-bottom: 380px;">A tímto jim děkuji!!!!</p></strong>
       
       
       

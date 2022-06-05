@@ -1,131 +1,85 @@
 <!DOCTYPE html>
 <html lang='cs'>
   <head>
-    <title>Recepty</title>
-<link rel="icon" type="image/x-icon" href="kuch.png"> 
+    <title>Kucharka_domaci stranka</title>
+ <link rel="icon" type="image/x-icon" href="kuch.png">
 
  
-<style>
+    <style>
+
+
+    body{
+margin: 0px 650px 0px 650px;
+text-align: center;
+color: black;
+
+}
+h2 {
+font-size:  15px;
+text-align: center;
+} 
+
+
+h1 {
+
+margin-top: 450px;
+font-size:  60px;
+text-align: center;
+} 
+
+html {
+background-image: url(ee.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed;
+font-family: 'Comforter', cursive;
+color: white;
+}
 
 
 
+a{
+color: white;
+font-size: 20px;
+}
 
-  body{
-  margin: 0px 650px 0px 650px;
-  text-align: center;
-  
-  color: black;
-  }
-  
-  h2 {
-  
-  
-  font-size:  50px;
-  text-align: center;
-  } 
-  
-  
-  h1 {
-  
-    font-size:60px;
-    margin-top:400px;
-    text-align: center;
-    
-  } 
-  
-  
-  button{
-  font-size: 15px;
-  
-  
-  }
-  
-  
-  
-  html {
-  background-image: url(ee.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-  font-family: 'Grape Nuts', cursive;
-  color: white;
-  
-  }
-  
-  ul {
-    
-  text-decoration: none;
-  font-size: 40px ;
-  cursor: pointer;
-  color: white;
-  
-    font-size: 20px;
-  }
-  
-  a{
-  color: white;
-  font-size: 20px;
-  }
-  
-  li{
-  color: white;
-  font-size: 20px;
-  }
-  
-  a:link, a:visited    {text-decoration: none}
-  
-  
-  .dropdown {
-  position: relative;
+
+
+a:link, a:visited    {text-decoration: none}
+
+
+.dropdown {
+position: relative;
+display: inline-block;
+
+}
+
+.menu {
+color: white;
+}
+.button {
+padding-top: 50px;
+}
+s {
+font-family: 'Grape Nuts', cursive;
+}
+div a{
+
+font-size:	40px;
+ padding-left: 50px;
+ padding-right: 50px; 
+  padding-top:0px;
+;
+}
+nav{
+  border: 5px solid #f4acb7;
+  padding: 15px 25px 15px 25px;
   display: inline-block;
   
-  }
-  
-  
-  
-  .menu {
-  color: white;
-  }
-  
-  
-  s {
-  font-family: 'Grape Nuts', cursive;
-  border: medium solid black;
-  }
-  
-  div div a{
-  
-  font-size:	40px;
-   padding-left: 50px;
-   padding-right: 50px; 
-    padding-top:0px;
-  
-  }
-  s div{
-    text-align: center;
-    background-color: black;
-    font-family:25px;
-    padding:0px;
-  
-  }
-  
-  
-  strong div a{
-  
-    text-align:center;
-    font-size:30px;
-    padding: 35px 20px 35px 35px;
-     background-repeat: no-repeat;
-     border: medium solid black;
-     margin-right:200px;
-  color:black;
-  
-  }
-  </style>
-  
-   
+}
 
 
+</style>
 
 
 
@@ -133,33 +87,36 @@
   </head> 
 <body>
 
-  <s>
-<div id="pagetop" class="notranslate" >
+
+    <div id="pagetop" class="notranslate" style="background-color: black ">
     
     
     
+ <s>   <div class="dropdown">
+   <a class="button" href="index.html" title='Domácí stránka '>Domácí stránka </a>
+  	</div>
+                 
+                 
+                 
    <div class="dropdown">
-    <a class="button" href="index.html" 		title='Domácí stránka '>Domácí stránka </a>
+    <a class="button" href="recepty.html" title='Recepty' >Recepty</a> 
+
      </div>
-                  
-                  
-                  
-    <div class="dropdown">
-     <a class="button" href="recepty.html" title='Recepty' >Recepty</a> 
+   
+   
+   <div class="dropdown">
+    <a class="button" href="pouzite.html" title='Použité stánky/recepty' >Použité stánky/recepty</a> 
  
-      </div>
+
+     </div>
+   
     
+
+         
+      </div> </s>
+      
     
-    <div class="dropdown">
-     <a class="button" href="pouzite.html" title='Použité stánky/recepty' >Použité stánky/recepty</a> 
-  
- 
-      </div>
-    
-     
- 
-          
-       </div> </s>
+
 
     
     
@@ -175,24 +132,39 @@
   
 
 
-   <nav>
+   
       <div>
    <strong>
+     <nav>
       <div class="dropdown">
-<a  href="sladke.html" title='Sladké dobroty' style="background-image: url(sladkejidla.jpg);">
+<a  href="sladke.html" title='Sladké dobroty' 
+style="
+positon: bottom rught;
+color:black;
+">
+<img src="sladke.png" alt="Sladká jidla"
+      height="150">
+
 Sladké dobroty
  </a>
      </div>
-   
-   
+    </nav>
+
+   <nav>
    <div class="dropdown">
     
-<a  href="slane.html" title='Slané dobroty' style="background-image: url(slanejidla.jpg)">
+<a  href="slane.html" title='Slané dobroty' 
+style="
+color:black;
+">
+<img src="slane.png" alt="Slané jídla"
+      height="150">
 Slané dobroty
 </a>
      </div>
+      </nav>
       </strong>
-       </nav>
+      
       
     
 

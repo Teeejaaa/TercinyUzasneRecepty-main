@@ -14,50 +14,38 @@ text-align: center;
 color: black;
 
 }
-h2 {
+p{
+font-size:25px;
 
-
-
-font-size:  15px;
-text-align: center;
-} 
+}
 
 
 h1 {
 
-
-font-size:  20px;
+margin-top:450px;
+font-size:  60px;
 text-align: center;
 } 
+h2{
+font-size: 35px;
 
+}
 html {
 background-image: url(ee.jpg);
 background-repeat: no-repeat;
 background-size: 100%;
 background-attachment: fixed;
-font-family: 'Grape Nuts', cursive;
+font-family: 'Comforter', cursive;
 color: white;
 }
 
-ul {
-  
-text-decoration: none;
-font-size: 40px ;
-cursor: pointer;
-color: white;
-
-  font-size: 20px;
-}
 
 a{
 color: white;
 font-size: 20px;
 }
 
-li{
-color: white;
-font-size: 20px;
-}
+
 
 a:link, a:visited    {text-decoration: none}
 
@@ -74,9 +62,7 @@ color: white;
 .button {
 padding-top: 50px;
 }
-s {
-font-family: 'Grape Nuts', cursive;
-}
+
 div div a{
 
 font-size:	40px;
@@ -91,9 +77,56 @@ div{
   font-family:25px;
   padding:0px;
 
+
+}
+
+#mySearch {
+  width: 100%;
+  font-size: 18px;
+  padding: 11px;
+  border: 1px solid #ddd;
+}
+
+
+#myMenu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+#myMenu li a {
+  padding: 12px;
+  text-decoration: none;
+  color: black;
+  display: block
+}
+
+#myMenu li a:hover {
+  background-color: #eee;
 }
 </style>
 
+<script>
+  function myFunction() {
+
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+  
+
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
 
 
 
@@ -131,14 +164,30 @@ div{
     
 
 
+      <h1>Domácí stránka</h1>
+      
+      
+      <h2>Vítejte na stránce <strong>Terčiny užasné recepty!</strong></h2>
+      <p>Zde najdete pár z mých oblíbených receptů a jídel</p>
+      <p>Vyhledejte si zde co chcete vidět</p>
+          
       
       
       
-      
-      
-      
-      
-      
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+          <ul id="myMenu">
+            <li><a href="recepty.html">Recepty</a></li>
+            <li><a href="slane.html">Slané dobroty</a></li>
+            <li><a href="sladke.html">Sladké dobroty</a></li>
+            <li><a href="pouzite.html">Použité odkazy</a></li>
+            <li><a href="odsladke.html">Odkazy-Sladké dobroty</a></li>
+            <li><a href="odslane.html">Odkazy-Slané dobroty</a></li>
+            <li><a href="pouzite.html#pomoc">Pomocník při tvorbě tohto webu</a></li>
+            
+          </ul>
+                
+                
       
       
       
